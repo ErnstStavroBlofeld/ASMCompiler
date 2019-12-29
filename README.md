@@ -6,7 +6,7 @@ Copyright 2019 Philipp Baszuk
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Stage](https://img.shields.io/badge/Status-pre%20alpha-green.svg)](https://github.com/ErnstStavroBlofeld/ASMCompiler/releases)
-[![Status](https://github.com/ErnstStavroBlofeld/ASMCompiler/workflows/Compiler%20application/badge.svg)](https://github.com/ErnstStavroBlofeld/ASMCompiler/actions)
+[![Status](https://github.com/ErnstStavroBlofeld/ASMCompiler/workflows/Compiler%20tests/badge.svg)](https://github.com/ErnstStavroBlofeld/ASMCompiler/actions)
 
 ## Project structure
 

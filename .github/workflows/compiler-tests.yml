@@ -1,4 +1,4 @@
-name: Compiler application
+name: Compiler tests
 on: [push]
 jobs:
   build:
