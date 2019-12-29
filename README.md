@@ -4,6 +4,8 @@ Assembly compiler for 8051 Processors
 
 Copyright 2019 Philipp Baszuk
 
+![](https://github.com/ErnstStavroBlofeld/ASMCompiler/workflows/Compiler%20application/badge.svg)
+
 ## Project structure
 
 | Folder name | Description                  |
