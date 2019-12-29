@@ -3,6 +3,7 @@ from app.core.lexer import Token
 
 def test_classification_symbol():
     assert Token.classificate('$') == (Token.Symbol, 1)
+    assert Token.classificate('#') == (Token.Symbol, 1)
 
 
 def test_classification_identifier():
