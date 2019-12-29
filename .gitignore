@@ -1,0 +1,7 @@
+# PyCharm files
+.idea
+
+# Virtual enviroment files
+.venv
+pyvenv.cfg
+pip-selfcheck.json
