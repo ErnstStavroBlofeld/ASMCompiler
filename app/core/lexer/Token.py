@@ -22,7 +22,7 @@ class Token(Enum):
     Symbol = (1, lambda char: match_length(r'[#;:,"+-/*@~=<>$]', char))
     Whitespace = (100, lambda char: match_length(r'\s+', char))
     Identifier = (100, lambda seq: match_length(r'[A-Za-z_.][A-Za-z0-9_.]*', seq))
-    Number = (18, lambda seq: match_length(r'([01]+[bB])|([0-7]+[oO])|([0-9a-fA-F]+[hH])', seq))
+    Number = (18, lambda seq: match_length(r'[01]+[bB]|[0-7]+[oO]|[0-9a-fA-F]+[hH]|[0-9]+', seq))
     String = (250, lambda seq: match_length(r'".*"', seq))
     Comment = (500, lambda seq: match_length(r';.*', seq))
 
