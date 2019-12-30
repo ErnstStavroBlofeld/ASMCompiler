@@ -22,8 +22,8 @@ def test_classification_number():
 
 
 def test_classification_string():
-    assert Token.classificate('"quoted " string"') == (Token.String, 17)
-    assert Token.classificate('"quoted " string" ignore') == (Token.String, 17)
+    assert Token.classificate('"quoted "string"') == (Token.String, 17)
+    assert Token.classificate('"quoted "string " ignore') == (Token.String, 17)
     assert Token.classificate('"quoted "multiple" strings"') == (Token.String, 27)
 
 
