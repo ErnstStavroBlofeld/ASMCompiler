@@ -10,7 +10,7 @@ def match_length(regex, sequence):
         return 0
     else:
         start, end = result.span()
-        return end if start is 0 else 0
+        return end if start == 0 else 0
 
 
 class Token(Enum):
