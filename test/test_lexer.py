@@ -44,3 +44,9 @@ def test_lexer_identifier_comment():
         (Token.Whitespace, ' '),
         (Token.Comment, ';comments with spaces')
     ]
+
+
+def test_lexer_comment_unicode():
+    assert Lexer(Emitter()).parse(';тэѕт ẗëṡẗ') == [
+        (Token.Comment, ';тэѕт ẗëṡẗ')
+    ]
