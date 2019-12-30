@@ -17,7 +17,7 @@ class Lexer:
         while i < len(text):
             token, length = Token.classificate(text[i:])
             if token is not None:
-                tokens.append((token, length))
+                tokens.append((token, text[i:i + length]))
                 i += length
             else:
                 self.error_emitter.emit(UnclassifiedTokenError(i, token))
