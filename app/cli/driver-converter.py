@@ -27,7 +27,7 @@ def convert_file(no_header, driver_file, output_file):
     lines = driver_file.readlines()
 
     if len(lines) == 0:
-        echo_colored('Input file is not valid cpu driver', 'red')
+        echo_colored('Error: input file is not valid cpu driver', 'red')
         return
 
     output = {
@@ -81,7 +81,7 @@ def convert_file(no_header, driver_file, output_file):
     output_file.write(dump(output, sort_keys=False))
     output_file.close()
 
-    echo('\n' 'File has been converted')
+    echo_colored('\n' 'Success: file has been converted', 'green')
 
 
 if __name__ == '__main__':
